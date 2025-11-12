@@ -15,6 +15,12 @@ double calcualte(char* op, double a, double b) {
     else if (!strcmp(op, "/")) {
         return mydiv(a, b);
     }
+    else if (!strcmp(op, "%")) {
+        return mymod(a, b);
+    }
+    else if (!strcmp(op, "^")) {
+        return mypow(a, b);
+    }
     else {
         printf("Unsupported operation: %s\n", op);
         return 0;
